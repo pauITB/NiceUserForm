@@ -27,7 +27,8 @@
         android:layout_margin="10sp"
         android:background="@color/colorPrimaryDark"
         android:text="Login"
-        android:textColor="@color/colorAccent">
+        android:textColor="@color/colorAccent"
+        app:icon="@drawable/ic_stat_name">
 
     </com.google.android.material.button.MaterialButton>
 
@@ -38,6 +39,7 @@
         android:layout_margin="10sp"
         android:background="@color/colorPrimaryDark"
         android:text="Register"
+        app:icon="@drawable/ic_action_name"
         android:textColor="@color/colorAccent">
 
     </com.google.android.material.button.MaterialButton>
