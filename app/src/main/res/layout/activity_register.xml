@@ -152,6 +152,7 @@
 
         <Spinner
             android:layout_width="match_parent"
+            android:background="@color/colorAccent"
             android:layout_height="wrap_content"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:entries="@array/gender_prounds">
