@@ -154,6 +154,7 @@
             android:layout_width="match_parent"
             android:background="@color/colorAccent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:entries="@array/gender_prounds">
 
@@ -163,6 +164,8 @@
             android:id="@+id/checbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@color/colorAccent"
             android:text="Acept Terms and conditions"
             >
 
