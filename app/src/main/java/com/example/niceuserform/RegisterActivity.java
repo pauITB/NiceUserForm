@@ -83,6 +83,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 Intent intent = new Intent(RegisterActivity.this,LogInActivity.class);
                 startActivity(intent);
 
+
             default:
                 uLayout.setErrorEnabled(false);
                 pLayout.setErrorEnabled(false);
