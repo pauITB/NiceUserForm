@@ -150,15 +150,19 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Spinner
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
-            android:background="@color/colorAccent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
-            android:entries="@array/gender_prounds">
+            android:hint="Gender prounds">
 
-        </Spinner>
+            <AutoCompleteTextView
+                android:id="@+id/filled_exposed_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <CheckBox
             android:id="@+id/checbox"
@@ -176,18 +180,17 @@
             android:id="@+id/register_registerButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/register"
             android:layout_margin="10sp"
 
             >
-
         </com.google.android.material.button.MaterialButton>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/register_logButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="@string/login"
             android:layout_margin="10sp"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
 

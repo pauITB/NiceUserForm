@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -20,6 +22,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     MaterialButton logInButton, registerButton;
     CheckBox checkBox;
     LinearLayout linearLayout;
+    AutoCompleteTextView editTextFilledExposedDropdown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
         logInButton = findViewById(R.id.register_logButton);
         registerButton = findViewById(R.id.register_registerButton);
+
+        String[] prounds = getResources().getStringArray(R.array.gender_prounds);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, prounds);
+
+        editTextFilledExposedDropdown = findViewById(R.id.filled_exposed_dropdown);
+        editTextFilledExposedDropdown.setAdapter(adapter);
 
         linearLayout.setOnClickListener(this);
         registerButton.setOnClickListener(this);
